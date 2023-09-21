@@ -20,7 +20,7 @@ const BottomBar: FC = () => {
 				/>
 				<a href='mailto:alx.charbo@gmail.com?subject=Prise de contact'>
 					<BottomBarApp
-						appName={"Mail"}
+						appName={"Contact me"}
 						icon={mailIcon}
 						alt={"Mail App Icon"}
 						onClick={() => {}}
@@ -33,7 +33,7 @@ const BottomBar: FC = () => {
 					onClick={() => {}}
 				/>
 				<BottomBarApp
-					appName={"Launchpad"}
+					appName={"Skills"}
 					icon={launchpadIcon}
 					alt={"Launchpad App Icon"}
 					onClick={() => {}}
