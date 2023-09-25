@@ -1,8 +1,12 @@
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { format } from "date-fns";
 import { appleLogo } from "../../assets/images";
 
-const TopBar = () => {
+interface ITopBar {
+	transparent?: boolean;
+}
+
+const TopBar: FC<ITopBar> = ({ transparent }) => {
 	const [time, setTime] = useState(new Date().toLocaleTimeString());
 	const [date, setDate] = useState(new Date().toLocaleDateString());
 
@@ -24,13 +28,25 @@ const TopBar = () => {
 		setDate(format(date, "eee. dd MMM."));
 	}, []);
 
+	const setTransparency = () => {
+		if (transparent) {
+			return "bg-transparent text-white";
+		} else {
+			return "bg-slate-100 text-black";
+		}
+	};
+
 	return (
-		<div className='w-full h-[28px] bg-slate-100 flex items-center justify-between px-4 absolute top-0'>
+		<div
+			className={`w-full h-[28px] ${setTransparency()} flex items-center justify-between px-4 absolute top-0`}
+		>
 			<div>
-				<img
-					src={appleLogo}
-					className='h-[24px]'
-				/>
+				{!transparent && (
+					<img
+						src={appleLogo}
+						className='h-[24px]'
+					/>
+				)}
 			</div>
 			<div className='flex gap-2'>
 				<span>{date}</span>
