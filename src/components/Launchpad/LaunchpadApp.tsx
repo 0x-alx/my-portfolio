@@ -15,7 +15,7 @@ const LaunchpadApp: FC<ILaunchpadApp> = ({ appName, icon, alt }) => {
 			<img
 				src={icon}
 				alt={alt}
-				className='h-[130px] w-[130px]'
+				className='h-[115px] w-[115px]'
 			/>
 			{appName}
 		</li>
