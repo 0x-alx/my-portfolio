@@ -50,7 +50,7 @@ const Terminal = () => {
 				{
 					command: command,
 					type: "info",
-					response: `{ name: 'Alex', age: 28, location: 'Aix-en-Provence', hobbies: ['sport', 'gaming', 'new technologies', 'hanging out with friends'], languages: ['French', 'English'], food: {favorite: 'tartare de boeuf', hate: 'mushrooms'} }`,
+					response: `{ name: 'Alex', age: 28, location: 'Aix-en-Provence', hobbies: ['sport', 'gaming', 'new technologies', 'hanging out with friends'], languages: ['French', 'English'], food: {favorite: '🥩', hate: '🍄'} }`,
 				},
 			]);
 		} else {
