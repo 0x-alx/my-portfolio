@@ -25,7 +25,7 @@ const BottomBar: FC = () => {
 	const notesVisible = useAppSelector((state) => state.notes.value);
 	const dispatch = useAppDispatch();
 	return (
-		<div className='h-16 w-full max-w-sm rounded-2xl bg-[rgba(83,83,83,0.25)] backdrop-blur-md flex justify-start items-center px-2'>
+		<div className='h-16 w-fit rounded-2xl bg-[rgba(83,83,83,0.25)] backdrop-blur-md flex justify-start items-center px-2'>
 			<ul className='flex flex-row'>
 				<BottomBarApp
 					appName={"Terminal"}
