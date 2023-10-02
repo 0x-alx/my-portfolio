@@ -1,5 +1,7 @@
 import { FC } from "react";
 import { Tooltip } from "react-daisyui";
+import { useAppSelector, useAppDispatch } from "../../app/hooks";
+import { closed, open } from "./terminalSlice";
 
 interface IBottomBarApp {
 	appName: string;

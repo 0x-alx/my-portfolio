@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useAppSelector, useAppDispatch } from "../../app/hooks";
+import { close } from "./terminalSlice";
 
 import TerminalLine from "./TerminalLine";
 
@@ -17,7 +19,9 @@ const Terminal = () => {
 			response: "Type 'help' to see all commands",
 		},
 	]);
-
+	const visible = useAppSelector((state) => state.terminal.value);
+	console.log(visible);
+	const dispatch = useAppDispatch();
 	const commandMap = (command: string) => {
 		if (command === "clear") {
 			setCommandHistory([]);
@@ -66,7 +70,7 @@ const Terminal = () => {
 				<div className='w-full h-[30px] flex sticky top-0 bg-slate-100 px-2 items-center'>
 					<div
 						className='h-3 w-3 bg-red-500 rounded-full cursor-pointer'
-						onClick={() => {}}
+						onClick={() => dispatch(close())}
 					></div>
 					<div className='ml-2 h-3 w-3 bg-orange-300 rounded-full cursor-pointer'></div>
 					<div className='ml-2 h-3 w-3 bg-green-500 rounded-full cursor-pointer'></div>
