@@ -19,6 +19,10 @@ import netlifyIcon from './appIcons/netlify.png'
 import postmanIcon from './appIcons/postman.png'
 import launchpadIcon from './appIcons/launchpad.png'
 import appleLogo from './apple-logo.png'
+import vpLogo from './vp-logo.svg'
+import armeeLogo from './armee-logo.svg'
+import linkedinIcon from './appIcons/linkedin.png'
 
 
-export {terminalIcon, mailIcon, noteIcon, launchpadIcon, appleLogo, reactIcon, nodeIcon, typescriptIcon, javascriptIcon, reduxIcon, htmlIcon, cssIcon, tailwindIcon, mongodbIcon, figmaIcon, expressIcon, viteIcon, muiIcon, storybookIcon, netlifyIcon, postmanIcon}
+
+export {terminalIcon, mailIcon, noteIcon, launchpadIcon, appleLogo, reactIcon, nodeIcon, typescriptIcon, javascriptIcon, reduxIcon, htmlIcon, cssIcon, tailwindIcon, mongodbIcon, figmaIcon, expressIcon, viteIcon, muiIcon, storybookIcon, netlifyIcon, postmanIcon, vpLogo, armeeLogo, linkedinIcon}
