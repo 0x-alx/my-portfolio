@@ -32,13 +32,13 @@ const TopBar: FC<ITopBar> = ({ transparent }) => {
 		if (transparent) {
 			return "bg-transparent text-white";
 		} else {
-			return "bg-slate-100 text-black";
+			return "bg-[rgb(241,245,249,0.4)] text-black";
 		}
 	};
 
 	return (
 		<div
-			className={`w-full h-[28px] ${setTransparency()} flex items-center justify-between px-4 absolute top-0`}
+			className={`w-full h-[28px] ${setTransparency()} flex items-center justify-between px-4 absolute top-0 backdrop-blur-md`}
 		>
 			<div>
 				{!transparent && (
