@@ -39,17 +39,13 @@ const Notes = () => {
 			],
 		},
 		{
-			title: "Note 3",
+			title: "À propos de moi",
 			companyName: "Lorem ipsum dolor sit amet frfrfrffr ",
-		},
-		{
-			title: "Note 4",
-			companyName: "Lorem ipsum dolor sit amet ",
 		},
 	];
 
 	return (
-		<div className='w-full h-[600px] max-w-[50%] absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-lg flex flex-col '>
+		<div className='w-full h-[600px] max-w-[876px] absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-lg flex flex-col '>
 			<div className='w-full h-[30px] flex bg-slate-100 px-2 items-center rounded-t-lg '>
 				<div
 					className='h-3 w-3 bg-red-500 rounded-full cursor-pointer'
