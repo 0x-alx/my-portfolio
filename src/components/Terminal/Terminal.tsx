@@ -72,8 +72,8 @@ const Terminal = () => {
 						className='h-3 w-3 bg-red-500 rounded-full cursor-pointer'
 						onClick={() => dispatch(close())}
 					></div>
-					<div className='ml-2 h-3 w-3 bg-orange-300 rounded-full cursor-pointer'></div>
-					<div className='ml-2 h-3 w-3 bg-green-500 rounded-full cursor-pointer'></div>
+					<div className='ml-2 h-3 w-3 bg-slate-500 rounded-full'></div>
+					<div className='ml-2 h-3 w-3 bg-slate-500 rounded-full'></div>
 				</div>
 				<div className='w-full h-auto max-h-full flex flex-col justify-end overflow-scroll pb-6 pl-2'>
 					{commandHistory.map((command) => (
