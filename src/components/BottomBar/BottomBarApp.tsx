@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Tooltip } from "react-daisyui";
-
 interface IBottomBarApp {
 	appName: string;
 	icon: string;
@@ -15,16 +14,18 @@ const BottomBarApp: FC<IBottomBarApp> = ({ appName, icon, alt, onClick }) => {
 			id={appName}
 			onClick={onClick}
 		>
-			<Tooltip
-				message={appName}
-				className=''
-			>
-				<img
-					src={icon}
-					alt={alt}
-					className='h-[50px] w-[50px]'
-				/>
-			</Tooltip>
+			<div>
+				<Tooltip
+					message={appName}
+					position='top'
+				>
+					<img
+						src={icon}
+						alt={alt}
+						className='h-[50px] w-[50px]'
+					/>
+				</Tooltip>
+			</div>
 		</li>
 	);
 };
