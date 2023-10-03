@@ -3,6 +3,7 @@ import terminalReducer from "../components/Terminal/terminalSlice"
 import launchpadReducer from "../components/Launchpad/launchpadSlice"
 import notesSlice from "../components/Notes/notesSlice"
 
+
 export const store = configureStore({
   reducer: {
     terminal: terminalReducer,
