@@ -10,8 +10,11 @@ const Login = () => {
 	const [toastActive, setToastActive] = useState(false);
 
 	useEffect(() => {
+		const modal = document.getElementById(
+			"my_modal_1"
+		) as HTMLDialogElement;
 		if (localStorage.getItem("first_connection") === null) {
-			document.getElementById("my_modal_1").showModal();
+			modal && modal.showModal();
 			localStorage.setItem("first_connection", "true");
 		}
 		console.log(localStorage.getItem("first_connection"));
