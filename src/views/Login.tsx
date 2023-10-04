@@ -1,13 +1,21 @@
-// import "dotenv/config";
 import { Avatar, Input } from "react-daisyui";
 import avatar from "../assets/images/avatar.jpg";
 import TopBar from "../components/TopBar/TopBar";
-import { useState } from "react";
-import { info, arrowRight } from "../assets/images";
+import Modal from "../components/Modal/Modal";
+import { useEffect, useState } from "react";
+import { arrowRight } from "../assets/images";
 
 const Login = () => {
 	const [password, setPassword] = useState("");
 	const [toastActive, setToastActive] = useState(false);
+
+	useEffect(() => {
+		if (localStorage.getItem("first_connection") === null) {
+			document.getElementById("my_modal_1").showModal();
+			localStorage.setItem("first_connection", "true");
+		}
+		console.log(localStorage.getItem("first_connection"));
+	}, []);
 
 	const handleSubmit = () => {
 		if (password === "hire_me123") {
@@ -64,7 +72,7 @@ const Login = () => {
 						: "translate-x-[calc(100%+30px)]"
 				}`}
 			>
-				<div className='alert alert-error'>
+				<div className='alert alert-error flex'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='stroke-current shrink-0 h-6 w-6'
@@ -81,6 +89,7 @@ const Login = () => {
 					<span>Bad password. Try hire_me123</span>
 				</div>
 			</div>
+			<Modal />
 		</div>
 	);
 };
