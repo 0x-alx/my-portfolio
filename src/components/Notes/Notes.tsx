@@ -1,13 +1,12 @@
-import { useState } from "react";
 import NoteResume from "./NoteResume";
 import NoteContent from "./NoteContent";
 import { vpLogo, armeeLogo } from "../../assets/images";
-import { useAppDispatch } from "../../app/hooks";
-import { close } from "./notesSlice";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { close, setActiveNote } from "./notesSlice";
 
 const Notes = () => {
+	const activeNote = useAppSelector((state) => state.notes.activeNote);
 	const dispatch = useAppDispatch();
-	const [activeNote, setActiveNote] = useState<number>(0);
 
 	const data = [
 		{
@@ -45,8 +44,8 @@ const Notes = () => {
 	];
 
 	return (
-		<div className='w-full h-[600px] max-w-[876px] absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-lg flex flex-col '>
-			<div className='w-full h-[30px] flex bg-slate-100 px-2 items-center rounded-t-lg '>
+		<div className='w-[98%] h-[600px] max-w-[876px] absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-lg flex flex-col overflow-hidden'>
+			<div className='w-full min-h-[30px] flex bg-slate-100 px-2 items-center rounded-t-lg '>
 				<div
 					className='h-3 w-3 bg-red-500 rounded-full cursor-pointer'
 					onClick={() => dispatch(close())}
@@ -54,9 +53,9 @@ const Notes = () => {
 				<div className='ml-2 h-3 w-3 bg-slate-500 rounded-full'></div>
 				<div className='ml-2 h-3 w-3 bg-slate-500 rounded-full'></div>
 			</div>
-			<div className='flex w-full h-full flex-row'>
+			<div className='flex w-full h-[570px] flex-row'>
 				{/* --- LEFT PART ---*/}
-				<div className='w-[30%] h-full bg-white rounded-l-lg border-r-[1px] border-slate-200 p-3 box-border flex flex-col gap-1'>
+				<div className='w-[30%] h-full bg-white rounded-l-lg border-r-[1px] border-slate-200 p-3 box-border flex-col gap-1 hidden md:flex'>
 					{data.map((note, index: number) => {
 						return (
 							<NoteResume
@@ -64,13 +63,13 @@ const Notes = () => {
 								title={note.title}
 								companyName={note.companyName}
 								isActive={activeNote === index && true}
-								onClick={() => setActiveNote(index)}
+								onClick={() => dispatch(setActiveNote(index))}
 							/>
 						);
 					})}
 				</div>
 				{/* --- RIGHT PART ---*/}
-				<div className='w-[70%] h-full bg-white rounded-r-lg'>
+				<div className='w-full md:w-[70%] h-full bg-white rounded-r-lg overflow-scroll m-h-full'>
 					<NoteContent
 						emote={
 							data[activeNote].emote ? data[activeNote].emote : ""

@@ -4,10 +4,12 @@ import { createSlice } from "@reduxjs/toolkit"
 
 export interface NotesState {
   value: boolean
+  activeNote: number
 }
 
 const initialState: NotesState = {
   value: false,
+  activeNote: 0,
 
 }
 
@@ -26,12 +28,15 @@ export const notesSlice = createSlice({
     close: (state) => {
       state.value = false
     },
+    setActiveNote: (state, action) => {
+      state.activeNote = action.payload
+    },
   },
 })
 
 
 
-export const { open, close } = notesSlice.actions
+export const { open, close, setActiveNote } = notesSlice.actions
 
 // The function below is called a selector and allows us to select a value from
 // the state. Selectors can also be defined inline where they're used instead of
