@@ -23,7 +23,8 @@ import vpLogo from './vp-logo.svg'
 import armeeLogo from './armee-logo.svg'
 import linkedinIcon from './appIcons/linkedin.png'
 import chevron from './chevron-droit.png'
+import info from './info.png'
+import arrowRight from './arrow-right.png'
 
 
-
-export {terminalIcon, mailIcon, noteIcon, launchpadIcon, appleLogo, reactIcon, nodeIcon, typescriptIcon, javascriptIcon, reduxIcon, htmlIcon, cssIcon, tailwindIcon, mongodbIcon, figmaIcon, expressIcon, viteIcon, muiIcon, storybookIcon, netlifyIcon, postmanIcon, vpLogo, armeeLogo, linkedinIcon, chevron}
+export {terminalIcon, mailIcon, noteIcon, launchpadIcon, appleLogo, reactIcon, nodeIcon, typescriptIcon, javascriptIcon, reduxIcon, htmlIcon, cssIcon, tailwindIcon, mongodbIcon, figmaIcon, expressIcon, viteIcon, muiIcon, storybookIcon, netlifyIcon, postmanIcon, vpLogo, armeeLogo, linkedinIcon, chevron, info, arrowRight}
