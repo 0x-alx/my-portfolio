@@ -1,27 +1,15 @@
-# React + TypeScript + Vite
+![Logo](https://i.ibb.co/grs3SnS/Capture-d-e-cran-2023-10-04-a-15-53-16.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Mon site perso
 
-Currently, two official plugins are available:
+Je suis ravi de vous accueillir sur mon site web personnel, conçu avec une touche d'inspiration du design emblématique de macOS. À travers cette expérience, je souhaite vous faire découvrir mon parcours et mes compétences tout en offrant une interface familière et originale.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce projet n'est pas seulement une vitrine de mes compétences en développement front-end, mais aussi un moyen de partager mon amour pour le design et l'expérience utilisateur.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+ViteJS, React, Typescript, Redux, TailwindCSS, DaisyUI
 
-- Configure the top-level `parserOptions` property like this:
+## Site live
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[https://recrute-un-alex.fr](https://recrute-un-alex.fr)
