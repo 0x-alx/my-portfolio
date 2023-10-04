@@ -62,7 +62,7 @@ const Terminal = () => {
 	};
 
 	return (
-		<div className='w-full h-[500px] max-w-2xl absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%]'>
+		<div className='w-[98%] h-[500px] max-w-2xl absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%]'>
 			<div
 				className='h-[500px] coding inverse-toggle shadow-lg text-gray-100 text-sm font-mono subpixel-antialiased 
               bg-[rgba(31,41,55,0.25)] backdrop-blur-md pb-6 rounded-lg leading-normal overflow-hidden'
