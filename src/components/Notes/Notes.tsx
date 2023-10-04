@@ -39,7 +39,7 @@ const Notes = () => {
 		},
 		{
 			title: "À propos de moi",
-			companyName: "Lorem ipsum dolor sit amet frfrfrffr ",
+			companyName: "[À compléter]",
 		},
 	];
 
