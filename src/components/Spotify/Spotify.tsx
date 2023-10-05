@@ -10,7 +10,7 @@ const Spotify = () => {
 			allowFullScreen={false}
 			allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
 			loading='lazy'
-			className='absolute top-[48px] right-4 max-w-sm max-h-[120px]'
+			className='absolute top-[48px] sm:right-4 sm:translate-x-0 max-w-sm max-h-[80px] right-1/2 translate-x-[50%]'
 		></iframe>
 	);
 };
