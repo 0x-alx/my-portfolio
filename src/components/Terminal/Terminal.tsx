@@ -88,7 +88,7 @@ const Terminal = () => {
 						<input
 							placeholder='Type a command here...'
 							type='response'
-							className='w-full bg-transparent outline-none border-none text-gray-100 ml-2 placeholder:italic'
+							className='w-full bg-transparent outline-none border-none text-gray-100 ml-2 placeholder:italic text-base'
 							onKeyDown={(e) => {
 								if (e.key === "Enter") {
 									commandMap(e.currentTarget.value);
