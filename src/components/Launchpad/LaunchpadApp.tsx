@@ -9,7 +9,7 @@ interface ILaunchpadApp {
 const LaunchpadApp: FC<ILaunchpadApp> = ({ appName, icon, alt }) => {
 	return (
 		<li
-			className='cursor-pointer w-[130px] flex flex-col justify-center items-center text-white'
+			className='w-[130px] flex flex-col justify-center items-center text-white'
 			id={appName}
 		>
 			<img
