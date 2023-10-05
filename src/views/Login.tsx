@@ -46,7 +46,7 @@ const Login = () => {
 				</h1>
 				<div className='relative'>
 					<Input
-						className='h-[30px] bg-[rgba(255,255,255,0.25)] backdrop-blur-md rounded-[20px] text-white max-w-[180px]'
+						className='h-[30px] bg-[rgba(255,255,255,0.25)] backdrop-blur-md rounded-[20px] text-white max-w-[180px] text-base'
 						placeholder='Enter password'
 						type='password'
 						onChange={(e) => {
