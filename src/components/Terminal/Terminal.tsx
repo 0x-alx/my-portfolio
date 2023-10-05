@@ -75,7 +75,7 @@ const Terminal = () => {
 					<div className='ml-2 h-3 w-3 bg-slate-500 rounded-full'></div>
 					<div className='ml-2 h-3 w-3 bg-slate-500 rounded-full'></div>
 				</div>
-				<div className='w-full h-auto max-h-full flex flex-col justify-end overflow-scroll pb-6 pl-2'>
+				<div className='w-full h-auto max-h-full flex flex-col justify-end overflow-x-hidden overflow-y-scroll pb-6 pl-2'>
 					{commandHistory.map((command) => (
 						<TerminalLine
 							type={command.type}
