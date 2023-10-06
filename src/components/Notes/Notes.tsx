@@ -44,7 +44,7 @@ const Notes = () => {
 	];
 
 	return (
-		<div className='w-[98%] h-[600px] max-w-[876px] absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-lg flex flex-col overflow-hidden'>
+		<div className='w-[98%] h-[600px] max-h-[80vh] max-w-[876px] absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] bg-white rounded-lg flex flex-col overflow-hidden'>
 			<div className='w-full min-h-[30px] flex bg-slate-100 px-2 items-center rounded-t-lg '>
 				<div
 					className='h-3 w-3 bg-red-500 rounded-full cursor-pointer'
