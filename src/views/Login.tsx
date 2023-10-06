@@ -75,7 +75,7 @@ const Login = () => {
 						: "translate-x-[calc(100%+30px)]"
 				}`}
 			>
-				<div className='alert alert-error flex'>
+				<div className='alert alert-error flex opacity-60'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='stroke-current shrink-0 h-6 w-6'
